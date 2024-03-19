@@ -40,7 +40,7 @@ public class Prime_or_not {
         } 
         else if (n >= 2) // greater than 2
         {
-            for (int i = 2; i <= n - 1; i++) {// loop to check which number will completly divide the 'n' number
+            for (int i = 2; i <= Math.sqrt(n); i++) {// loop to check which number will completly divide the 'n' number
                 if (n % i == 0) {// completly divide thay toh ee number prime nathi
                     // isPrime = false;
                     // break; no need for this we can directly write that return false when
@@ -58,7 +58,7 @@ public class Prime_or_not {
 
     // creating a main class
     public static void main(String[] args) {
-        System.out.println(isPrime(555));
+        System.out.println(isPrime(1));
     }
 
 }
